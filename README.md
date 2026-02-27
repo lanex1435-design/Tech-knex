@@ -1,4 +1,18 @@
-let userId=localStorage.getItem("userId")
+function openAI(){
+
+document.getElementById("aiBox").style.display="block"
+
+}
+
+function askAI(){
+
+let question=document.getElementById("aiInput").value
+
+let answer="Tech Knex AI is thinking about: "+question
+
+document.getElementById("aiResponse").innerText=answer
+
+}let userId=localStorage.getItem("userId")
 
 async function register(){
 

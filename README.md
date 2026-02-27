@@ -183,7 +183,7 @@ Our mission is to bring smart technology solutions to everyone.
 <h2>Contact Us</h2>
 
 <p>Email: techknex@email.com</p>
-<p>Phone: +254 XXX XXX XXX</p>
+<p>Phone: +254 0799812274</p>
 
 <button onclick="sendMessage()">Send Message</button>
 

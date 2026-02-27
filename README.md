@@ -1,4 +1,4 @@
-let balance = 0;
+https://yourusername.github.io/techknexlet balance = 0;
 
 function deposit(){
 

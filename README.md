@@ -1,4 +1,8 @@
-<!DOCTYPE html>
+footer{
+margin-top:80px;
+padding:20px;
+background:#020617;
+}<!DOCTYPE html>
 <html>
 <head>
 <title>Contact</title>

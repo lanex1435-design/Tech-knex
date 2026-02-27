@@ -2,6 +2,29 @@
 <html>
 
 <head>
+<title>Dashboard</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>Dashboard</h1>
+
+<p id="balance">Balance: $0</p>
+
+<input id="amount" placeholder="Deposit amount">
+
+<p>Processing fee required before deposit</p>
+
+<button onclick="deposit()">Deposit</button>
+
+<script src="main.js"></script>
+
+</body>
+</html><!DOCTYPE html>
+<html>
+
+<head>
 <title>Register</title>
 <link rel="stylesheet" href="style.css">
 </head>

@@ -1,4 +1,51 @@
-function openAI(){
+body{
+font-family:Arial;
+background:#0f172a;
+color:white;
+text-align:center;
+}
+
+header{
+display:flex;
+justify-content:space-between;
+padding:20px;
+background:#020617;
+}
+
+button{
+padding:12px 20px;
+background:#22c55e;
+border:none;
+border-radius:6px;
+color:white;
+}
+
+input{
+padding:10px;
+margin:10px;
+}
+
+.hero{
+padding:120px;
+background:linear-gradient(45deg,#2563eb,#9333ea);
+}
+
+.aiBtn{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#9333ea;
+}
+
+.aiBox{
+display:none;
+position:fixed;
+bottom:80px;
+right:20px;
+background:#1e293b;
+padding:20px;
+border-radius:10px;
+}function openAI(){
 
 document.getElementById("aiBox").style.display="block"
 

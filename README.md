@@ -1,4 +1,4 @@
-footer{
+https://yourusername.github.io/techknexfooter{
 margin-top:80px;
 padding:20px;
 background:#020617;

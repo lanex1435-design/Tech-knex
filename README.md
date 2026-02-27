@@ -1,4 +1,49 @@
 <!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Tech Knex</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav>
+<h2>Tech Knex</h2>
+
+<div class="links">
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="services.html">Services</a>
+<a href="invest.html">Invest</a>
+<a href="contact.html">Contact</a>
+<a href="login.html">Login</a>
+</div>
+
+</nav>
+
+<section class="hero">
+
+<h1>Innovation Through Electronics</h1>
+<p>Electronics sales, repairs, and smart investments.</p>
+
+<a class="button" href="invest.html">Start Investing</a>
+
+<p>Call us: 0799812274</p>
+
+<a class="button" href="tel:0799812274">Call Now</a>
+
+</section>
+
+<footer>
+
+<p>Tech Knex © 2026</p>
+<p>Phone: 0799812274</p>
+
+</footer>
+
+</body>
+</html><!DOCTYPE html>
 <html lang="en">
 
 <head>

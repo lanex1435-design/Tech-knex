@@ -1,4 +1,19 @@
-<!DOCTYPE html>
+tech-knex-v4
+
+server.js
+package.json
+
+/database
+   db.json
+
+/public
+   index.html
+   login.html
+   register.html
+   dashboard.html
+   style.css
+   main.js
+   ai.js<!DOCTYPE html>
 <html>
 
 <head>

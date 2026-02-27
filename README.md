@@ -1,4 +1,59 @@
-{
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Tech Knex</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+
+<h1>TECH KNEX</h1>
+
+<nav>
+
+<a href="login.html">Login</a>
+<a href="register.html">Register</a>
+
+</nav>
+
+</header>
+
+<section class="hero">
+
+<h2>Innovation Through Electronics</h2>
+
+<p>Robotics • AI • Electronics Engineering</p>
+
+<a href="register.html">
+<button>Join Platform</button>
+</a>
+
+</section>
+
+<button class="aiBtn" onclick="openAI()">AI Assistant</button>
+
+<div id="aiBox" class="aiBox">
+
+<h3>Tech Knex AI</h3>
+
+<input id="aiInput" placeholder="Ask something">
+
+<button onclick="askAI()">Send</button>
+
+<p id="aiResponse"></p>
+
+</div>
+
+<script src="ai.js"></script>
+
+</body>
+</html>{
 "users":[]
 }const express = require("express")
 const bodyParser = require("body-parser")

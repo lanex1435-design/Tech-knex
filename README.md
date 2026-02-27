@@ -1,4 +1,6 @@
-const express = require("express")
+{
+"users":[]
+}const express = require("express")
 const bodyParser = require("body-parser")
 const fs = require("fs")
 

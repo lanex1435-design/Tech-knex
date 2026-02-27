@@ -1,5 +1,114 @@
 <!DOCTYPE html>
 <html>
+
+<head>
+
+<title>Tech Knex Dashboard</title>
+
+<style>
+
+body{
+font-family:-apple-system;
+background:#0b0b0b;
+color:white;
+text-align:center;
+padding:60px;
+}
+
+.card{
+background:#111;
+padding:30px;
+margin:20px auto;
+width:350px;
+border-radius:12px;
+}
+
+button{
+padding:12px 25px;
+background:#22c55e;
+border:none;
+color:white;
+border-radius:8px;
+cursor:pointer;
+}
+
+input{
+padding:10px;
+margin:10px;
+border:none;
+border-radius:8px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>Welcome to Tech Knex</h1>
+
+<div class="card">
+
+<h3>Activation Fee</h3>
+
+<p>Pay $2 to activate deposits</p>
+
+<button onclick="pay()">Pay Fee</button>
+
+</div>
+
+<div class="card" id="depositArea" style="display:none">
+
+<h3>Deposit Money</h3>
+
+<input id="amount" type="number" placeholder="Enter amount">
+
+<button onclick="deposit()">Deposit</button>
+
+</div>
+
+<div class="card">
+
+<h2 id="balance">Balance: $0</h2>
+
+</div>
+
+<script>
+
+let balance=0
+
+function pay(){
+
+alert("Processing payment...")
+
+setTimeout(()=>{
+
+alert("Activation successful")
+
+document.getElementById("depositArea").style.display="block"
+
+},2000)
+
+}
+
+function deposit(){
+
+let amount=parseFloat(document.getElementById("amount").value)
+
+if(!amount) return
+
+balance+=amount
+
+document.getElementById("balance").innerText="Balance: $"+balance
+
+}
+
+</script>
+
+</body>
+
+</html><!DOCTYPE html>
+<html>
 <head>
 
 <title>Tech Knex</title>

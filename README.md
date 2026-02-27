@@ -1,4 +1,70 @@
-<!DOCTYPE html>
+let userId=localStorage.getItem("userId")
+
+async function register(){
+
+let email=document.getElementById("email").value
+let password=document.getElementById("password").value
+
+await fetch("/api/register",{
+
+method:"POST",
+headers:{
+"Content-Type":"application/json"
+},
+body:JSON.stringify({email,password})
+
+})
+
+alert("Account created")
+
+}
+
+async function login(){
+
+let email=document.getElementById("email").value
+let password=document.getElementById("password").value
+
+let res=await fetch("/api/login",{
+
+method:"POST",
+headers:{
+"Content-Type":"application/json"
+},
+body:JSON.stringify({email,password})
+
+})
+
+let data=await res.json()
+
+localStorage.setItem("userId",data.id)
+
+window.location="dashboard.html"
+
+}
+
+async function deposit(){
+
+let amount=document.getElementById("amount").value
+
+let res=await fetch("/api/deposit",{
+
+method:"POST",
+headers:{
+"Content-Type":"application/json"
+},
+body:JSON.stringify({
+userId:Number(localStorage.getItem("userId")),
+amount:Number(amount)
+})
+
+})
+
+let data=await res.json()
+
+document.getElementById("balance").innerText=
+"Balance: $"+data.balance
+
+}<!DOCTYPE html>
 <html>
 
 <head>

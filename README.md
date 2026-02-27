@@ -1,4 +1,4 @@
-npm install express body-parser
+http://localhost:3000npm install express body-parser
 node server.jsbody{
 font-family:Arial;
 background:#0f172a;

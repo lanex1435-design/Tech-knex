@@ -1,4 +1,46 @@
-body{
+let balance = 0;
+
+function deposit(){
+
+let amount = Number(document.getElementById("depositAmount").value);
+
+balance += amount;
+
+document.getElementById("balance").innerText = "$" + balance;
+
+}
+
+function withdraw(){
+
+let amount = Number(document.getElementById("withdrawAmount").value);
+
+if(amount <= balance){
+
+balance -= amount;
+
+document.getElementById("balance").innerText = "$" + balance;
+
+}else{
+
+alert("Insufficient balance");
+
+}
+
+}
+
+function calculate(){
+
+let amount = document.getElementById("amount").value;
+
+let starter = amount * 1.10;
+let growth = amount * 1.25;
+let premium = amount * 1.40;
+
+document.getElementById("starter").innerText = "$" + starter;
+document.getElementById("growth").innerText = "$" + growth;
+document.getElementById("premium").innerText = "$" + premium;
+
+}body{
 font-family:Arial;
 margin:0;
 background:#0f172a;

@@ -1,6 +1,95 @@
 <!DOCTYPE html>
 <html>
 <head>
+
+<title>Tech Knex</title>
+
+<style>
+
+body{
+font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+background:#000;
+color:white;
+text-align:center;
+padding-top:120px;
+}
+
+.container{
+background:#111;
+padding:40px;
+width:320px;
+margin:auto;
+border-radius:12px;
+box-shadow:0 0 20px rgba(255,255,255,0.1);
+}
+
+input{
+width:90%;
+padding:12px;
+margin:10px;
+border:none;
+border-radius:8px;
+}
+
+button{
+padding:12px 25px;
+background:#0071e3;
+border:none;
+color:white;
+border-radius:8px;
+cursor:pointer;
+}
+
+button:hover{
+background:#005bb5;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Tech Knex</h1>
+
+<h3>Login</h3>
+
+<input id="user" placeholder="Username">
+
+<input id="pass" type="password" placeholder="Password">
+
+<button onclick="login()">Login</button>
+
+</div>
+
+<script>
+
+function login(){
+
+let user=document.getElementById("user").value
+let pass=document.getElementById("pass").value
+
+if(user && pass){
+
+localStorage.setItem("user",user)
+window.location="dashboard.html"
+
+}else{
+
+alert("Enter login details")
+
+}
+
+}
+
+</script>
+
+</body>
+</html><!DOCTYPE html>
+<html>
+<head>
 <title>Tech Knex - Login</title>
 
 <style>

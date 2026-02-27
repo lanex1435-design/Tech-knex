@@ -1,6 +1,36 @@
 <!DOCTYPE html>
 <html>
 <head>
+<title>Contact</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>Contact Tech Knex</h1>
+
+<p>Phone: 0799812274</p>
+<p>Email: techknex@email.com</p>
+
+<a class="button" href="tel:0799812274">Call Us</a>
+
+<input type="text" placeholder="Your Name">
+<input type="email" placeholder="Email">
+<textarea placeholder="Message"></textarea>
+
+<button>Send</button>
+
+<footer>
+
+<p>Tech Knex © 2026</p>
+<p>Phone: 0799812274</p>
+
+</footer>
+
+</body>
+</html><!DOCTYPE html>
+<html>
+<head>
 <meta charset="UTF-8">
 <title>Tech Knex</title>
 <link rel="stylesheet" href="style.css">

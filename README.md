@@ -1,4 +1,38 @@
 <!DOCTYPE html>
+<html>
+
+<head>
+<title>Dashboard</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<h2>Tech Knex Dashboard</h2>
+</header>
+
+<section class="dashboard">
+
+<h3>Your Balance</h3>
+
+<h1 id="balance">$0</h1>
+
+<input id="depositAmount" placeholder="Deposit amount">
+
+<button onclick="deposit()">Deposit</button>
+
+<input id="withdrawAmount" placeholder="Withdraw amount">
+
+<button onclick="withdraw()">Withdraw</button>
+
+</section>
+
+<script src="app.js"></script>
+
+</body>
+
+</html><!DOCTYPE html>
 <html lang="en">
 
 <head>

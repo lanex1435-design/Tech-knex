@@ -1,4 +1,5 @@
-body{
+npm install express body-parser
+node server.jsbody{
 font-family:Arial;
 background:#0f172a;
 color:white;

@@ -1,4 +1,75 @@
-https://yourusername.github.io/techknexlet balance = 0;
+<!DOCTYPE html>
+<html>
+<head>
+<title>Tech Knex - Login</title>
+
+<style>
+
+body{
+font-family: Arial;
+background:#0f172a;
+color:white;
+text-align:center;
+padding-top:100px;
+}
+
+input{
+padding:10px;
+margin:10px;
+width:200px;
+}
+
+button{
+padding:10px 20px;
+background:#3b82f6;
+color:white;
+border:none;
+cursor:pointer;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>Tech Knex</h1>
+
+<h2>Login</h2>
+
+<input type="text" id="username" placeholder="Username"><br>
+
+<input type="password" id="password" placeholder="Password"><br>
+
+<button onclick="login()">Login</button>
+
+<p id="message"></p>
+
+<script>
+
+function login(){
+
+let user = document.getElementById("username").value
+let pass = document.getElementById("password").value
+
+if(user && pass){
+
+localStorage.setItem("loggedIn", true)
+
+window.location.href = "dashboard.html"
+
+}else{
+
+document.getElementById("message").innerHTML = "Enter username and password"
+
+}
+
+}
+
+</script>
+
+</body>
+</html>https://yourusername.github.io/techknexlet balance = 0;
 
 function deposit(){
 

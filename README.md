@@ -1,4 +1,93 @@
-https://yourusername.github.io/techknexfooter{
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tech Knex</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+
+<h1>Tech Knex</h1>
+
+<nav>
+<a href="#">Home</a>
+<a href="#plans">Plans</a>
+<a href="#calculator">Calculator</a>
+<a href="dashboard.html">Dashboard</a>
+</nav>
+
+</header>
+
+
+<section class="hero">
+
+<h2>Smart Digital Finance Platform</h2>
+
+<p>Manage deposits and track potential growth.</p>
+
+<button onclick="location.href='dashboard.html'">
+Open Dashboard
+</button>
+
+</section>
+
+
+<section id="plans" class="plans">
+
+<h2>Plans</h2>
+
+<div class="card">
+<h3>Starter</h3>
+<p>10% estimate</p>
+<p>7 days</p>
+</div>
+
+<div class="card">
+<h3>Growth</h3>
+<p>25% estimate</p>
+<p>30 days</p>
+</div>
+
+<div class="card">
+<h3>Premium</h3>
+<p>40% estimate</p>
+<p>90 days</p>
+</div>
+
+</section>
+
+
+<section id="calculator" class="calculator">
+
+<h2>Return Calculator</h2>
+
+<input id="amount" placeholder="Enter amount">
+
+<button onclick="calculate()">Calculate</button>
+
+<p>Starter: <span id="starter"></span></p>
+<p>Growth: <span id="growth"></span></p>
+<p>Premium: <span id="premium"></span></p>
+
+</section>
+
+
+<footer>
+
+<p>Contact: 0799812274</p>
+<p>© 2026 Tech Knex</p>
+
+</footer>
+
+<script src="app.js"></script>
+
+</body>
+</html>https://yourusername.github.io/techknexfooter{
 margin-top:80px;
 padding:20px;
 background:#020617;

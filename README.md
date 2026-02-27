@@ -2,6 +2,26 @@
 <html>
 
 <head>
+<title>Register</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h2>Create Account</h2>
+
+<input id="email" placeholder="Email">
+<input id="password" type="password" placeholder="Password">
+
+<button onclick="register()">Register</button>
+
+<script src="main.js"></script>
+
+</body>
+</html><!DOCTYPE html>
+<html>
+
+<head>
 <title>Login</title>
 <link rel="stylesheet" href="style.css">
 </head>

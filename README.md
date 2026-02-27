@@ -1,4 +1,86 @@
-tech-knex-v4
+const express = require("express")
+const bodyParser = require("body-parser")
+const fs = require("fs")
+
+const app = express()
+
+app.use(bodyParser.json())
+app.use(express.static("public"))
+
+const DB = "./database/db.json"
+
+function readDB(){
+return JSON.parse(fs.readFileSync(DB))
+}
+
+function writeDB(data){
+fs.writeFileSync(DB, JSON.stringify(data,null,2))
+}
+
+/* Register */
+
+app.post("/api/register",(req,res)=>{
+
+let db = readDB()
+
+let user={
+id:Date.now(),
+email:req.body.email,
+password:req.body.password,
+balance:0
+}
+
+db.users.push(user)
+
+writeDB(db)
+
+res.json({message:"registered"})
+})
+
+/* Login */
+
+app.post("/api/login",(req,res)=>{
+
+let db = readDB()
+
+let user=db.users.find(u=>
+u.email===req.body.email &&
+u.password===req.body.password
+)
+
+if(!user){
+return res.status(401).json({message:"invalid"})
+}
+
+res.json(user)
+
+})
+
+/* Deposit */
+
+app.post("/api/deposit",(req,res)=>{
+
+let db=readDB()
+
+let user=db.users.find(u=>u.id===req.body.userId)
+
+if(!user){
+return res.status(404).json({})
+}
+
+user.balance+=req.body.amount
+
+writeDB(db)
+
+res.json({balance:user.balance})
+
+})
+
+app.listen(3000,()=>{
+
+console.log("Tech Knex V4 running")
+
+})tech-knex-v4
 
 server.js
 package.json
